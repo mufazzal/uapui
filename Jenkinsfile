@@ -7,16 +7,21 @@ pipeline {
     }
     stages {
         stage('Install') { 
-            steps { sh 'npm installSkip'}
+            steps { sh 'npm run install'}
         }
 
         stage('mufScript') { 
-            steps { sh 'npm mufScript'}
+            steps { sh 'npm run mufScript'}
         }
 
-        stage('Build') { 
-            steps { sh 'npm builldSkip'}
+        stage('Build') {
+            steps { sh 'npm run build'}
         }
-        
+
+        stage('CDP Artifact') {
+            steps {
+                steps { sh 'npm run createCodeDeployArtifact'}
+            }        
+        }
     }
 }

@@ -8,18 +8,26 @@
     "@testing-library/user-event": "^7.2.1",
     "aws-amplify": "^3.0.17",
     "aws-sdk": "^2.696.0",
+    "fs-extra": "^9.0.1",
     "jwt-decode": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "rimraf": "^3.0.2"
   },
   "scripts": {
     "mufScript": "echo 'this is mufScript'",
     "installSkip": "echo 'skipping install for quick tuto'",
-    "builldSkip": "echo 'skipping build for quick tuto'",
+    "buildSkip": "echo 'skipping build for quick tuto'",
     "mufScriptNodeFile": "node scripts/mufScriptNode",
+
     "start": "react-scripts start",
-    "build": "react-scripts build",
+
+    "createCodeDeployArtifact": "node scripts/createCodeDeployArtifact",
+
+    "build": "react-scripts build && npm run postBuild",
+    "postBuild": "node scripts/postBuild",
+
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,6 +47,8 @@
     ]
   },
   "devDependencies": {
-    "aws4fetch": "^1.0.9"
+    "archiver": "^4.0.1",
+    "aws4fetch": "^1.0.9",
+    "ncp": "^2.0.0"
   }
 }
