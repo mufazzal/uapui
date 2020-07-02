@@ -14,6 +14,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "mufScript": "echo 'this is mufScript'",
+    "installSkip": "echo 'skipping install for quick tuto'",
+    "builldSkip": "echo 'skipping build for quick tuto'",
+    "mufScriptNodeFile": "node scripts/mufScriptNode",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
