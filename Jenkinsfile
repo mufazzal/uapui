@@ -18,7 +18,7 @@ pipeline {
             steps { sh 'npm run build'}
         }
 
-        stage('CDP Artifact') {
+        stage('CDPArtifact') {
             steps {
                 steps { sh 'npm run createCodeDeployArtifact'}
             }        
