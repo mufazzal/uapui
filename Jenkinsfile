@@ -7,7 +7,7 @@ pipeline {
     }
     stages {
         stage('Install') { 
-            steps { sh 'npm run install'}
+            steps { sh 'npm install'}
         }
 
         stage('mufScript') { 
