@@ -1,0 +1,14 @@
+{
+    "domain": "mufpoolau.auth.us-east-1.amazoncognito.com",
+    "scope": [
+      "phone",
+      "email",
+      "profile",
+      "openid",
+      "aws.cognito.signin.user.admin"
+    ],
+    "redirectSignIn": "https://127.0.0.1:3000",
+    "redirectSignOut": "https://127.0.0.1:3000",
+    "responseType": "code"
+  }
+  

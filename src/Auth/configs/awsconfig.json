@@ -1,0 +1,23 @@
+{
+    "Auth": {
+      "region": "us-east-1",
+      
+      "userPoolId": "us-east-1_d8rcMtMXj",
+      "userPoolWebClientId": "2em5d4n7mqqu0rfojaeutdfeb6",
+      
+      "mandatorySignIn": false,
+      "cookieStorage": {
+        "domain": "127.0.0.1",
+        "path": "/",
+        "expires": 365,
+        "secure": true
+      },
+      "redirectSignIn": "https://127.0.0.1:3000",
+      "redirectSignOut": "https://127.0.0.1:3000"
+    },
+    "API": {
+      "endpoints": [
+        
+      ]
+    }
+  }
