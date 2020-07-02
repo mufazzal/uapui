@@ -7,15 +7,15 @@ pipeline {
     }
     stages {
         stage('Install') { 
-            steps { sh 'npm installSkip'}
+            steps { sh 'npm run installSkip'}
         }
 
         stage('mufScript') { 
-            steps { sh 'npm mufScript'}
+            steps { sh 'npm run mufScript'}
         }
 
         stage('Build') { 
-            steps { sh 'npm builldSkip'}
+            steps { sh 'npm run builldSkip'}
         }
         
     }
