@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:6-alpine' 
+            image 'node:12-alpine' 
             args '-p 3000:3000' 
         }
     }
@@ -18,10 +18,8 @@ pipeline {
             steps { sh 'npm run build'}
         }
 
-        stage('CDP Artifact') {
-            steps {
-                steps { sh 'npm run createCodeDeployArtifact'}
-            }        
+        stage('CDPArtifact') {
+            steps { sh 'npm run createCodeDeployArtifact'}
         }
     }
 }
