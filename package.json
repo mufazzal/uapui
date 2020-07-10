@@ -20,14 +20,10 @@
     "installSkip": "echo 'skipping install for quick tuto'",
     "buildSkip": "echo 'skipping build for quick tuto'",
     "mufScriptNodeFile": "node scripts/mufScriptNode",
-
     "start": "react-scripts start",
-
     "createCodeDeployArtifact": "node scripts/createCodeDeployArtifact",
-
     "build": "react-scripts build && npm run postBuild",
     "postBuild": "node scripts/postBuild",
-
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
