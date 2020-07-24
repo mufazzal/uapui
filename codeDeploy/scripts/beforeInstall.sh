@@ -9,4 +9,4 @@ sudo rm -rf *
 sudo mkdir testHostFile  
 sudo chmod -R o+r testHostFile
 cd testHostFile
-echo "<html><h1>HTTPD is running at </h1></html>" > testHello.html
+echo "<html><h1>HTTPD is running </h1></html>" > testHello.html

@@ -1,7 +1,8 @@
-var rimraf = require("rimraf");
+const rimraf = require("rimraf");
 const fs = require('fs-extra')
 const path = require("path")
-var archiver = require('archiver');
+const archiver = require('archiver');
+const config = require('../config');
 
 const root = process.cwd();
 
@@ -21,10 +22,7 @@ console.log('build folder copied to codeDeployArtifact');
 fs.copySync(pathToCodeDeployDir, pathToCodeDeployDir_out)
 console.log('codeDeploy folder contents copied to codeDeployArtifact');
 
-
-
-
-var output = fs.createWriteStream(pathToOutputDir + '/codeDeployArtifactFinal.zip');
+var output = fs.createWriteStream(`${pathToOutputDir}/${config.bundleS3Key}` );
 var archive = archiver('zip', {
   zlib: { level: 9 } // Sets the compression level.
 });

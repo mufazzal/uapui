@@ -21,5 +21,9 @@ pipeline {
         stage('CDPArtifact') {
             steps { sh 'npm run createCodeDeployArtifact'}
         }
+
+        stage('Uploading') {
+            steps { sh 'npm run upload'}
+        }
     }
 }
