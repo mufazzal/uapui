@@ -4,7 +4,7 @@ import Login from './Auth/Login'
 import ApiGetwayAuth from './APIGetway/ApiGetwayAuth'
 import SNSTuto from './SNSTuto/SNSTuto'
 import SQSTuto from './SQSTuto/SQSTuto'
-
+import S3Tuto from './S3Tuto/S3Tuto'
 
 function App() {
 
@@ -28,6 +28,10 @@ function App() {
 		  <Login user={user} session={session} user={user} onLogin={onLogin} onTokenRefresh={onTokenRefresh}/>
       <br />
       
+      --------S3
+      <S3Tuto session={session} />
+      <br />
+
       --------ApiGetwayAuth
       <ApiGetwayAuth session={session} />
       <br />

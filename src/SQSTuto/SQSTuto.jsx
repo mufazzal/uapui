@@ -1,7 +1,7 @@
 import React from 'react';
 const AWS = require('aws-sdk');
 
-const apiGetwayHost = "https://z7nmthrevh.execute-api.us-east-1.amazonaws.com/beta";
+const apiGetwayHost = "https://8suou6v4z8.execute-api.us-east-1.amazonaws.com/beta";
 
 function SQSTuto({session}) {
   return (

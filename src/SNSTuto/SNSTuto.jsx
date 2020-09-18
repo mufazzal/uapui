@@ -1,7 +1,7 @@
 import React from 'react';
 const AWS = require('aws-sdk');
 
-const apiGetwayHost = "https://r33c5amhmf.execute-api.us-east-1.amazonaws.com/beta";
+const apiGetwayHost = "https://6r9702jwrb.execute-api.us-east-1.amazonaws.com/beta";
 
 function SNSTuto({session}) {
   return (
