@@ -13,8 +13,8 @@ function S3Tuto({session}) {
             File: <input type="file" id="file"/> <br />
             Bucket: <input type="text" id="bucketName" value="muf-aws-tuto-acl-public-rw"/> <br />
             ACL: <input type="text" id="acl"/> <br />
-            Access Id: <input type="text" id="acId" value="AKIAVU3ZOCQQBVJABNPJ"/> <br />
-            Secret Key: <input type="text" id="secret" value="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"/> <br />
+            Access Id: <input type="text" id="acId" value=""/> <br />
+            Secret Key: <input type="text" id="secret" value=""/> <br />
        
             <br />
             <button onClick={() => uploadFile()}>Upload</button>     
